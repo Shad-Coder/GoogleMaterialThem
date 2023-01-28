@@ -2,6 +2,7 @@ const message = document.querySelector('.popup');
 const hand = document.querySelector('.disabled');
 const firstslide = document.querySelector('.first_slide');
 const twohand = document.querySelector('.disabled1');
+
 message.addEventListener('click', function () {
     message.classList.remove('message1');
     message.classList.add('onpopup');
@@ -26,7 +27,9 @@ function showTime(){
     var time = h + ":" + m + ":" + s;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
-    time = document.querySelector('timer')
+    time = document.querySelector('timer');
+    
     setTimeout(showTime, 1000);
 }
+
 showTime();

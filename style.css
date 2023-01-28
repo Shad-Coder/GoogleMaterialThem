@@ -22,19 +22,88 @@ header {
     width: 31%;
     height: 100%;
     margin-left: 3.9%;
-  
+  display: inline-flex;
   
 }
+
+.Google-eco {
+    font-family: 'Quicksand', sans-serif;
+    color: #ebf795;
+    font-size:1.1vmax;
+    margin-top: 0;
+    
+    background-color: #3a3d3c;
+    width: 90%;
+    height: 45%;
+    top: 100%;
+    bottom: 45%;
+   padding-top: 0.30%;
+    position:absolute;
+    display: inline-flex;
+    padding-left: 10%;
+    padding-right:0.70%;
+    
+    right: 1.5%;
+    border-radius: 21px;
+}
+
 .elem_1 {
-    width: 4vmin;
-    height: 4vmin;
+    width: 5vmin;
+    height: 5vmin;
     position:relative;
     top: 33%;
-    background:#797976;
+    background:#e6e7df;
     border-radius: 50%;
 
     margin-right: 6%;
     display: inline-flex;
+}
+.icon {
+    width: 60%;
+    height: 60%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.clock {
+    position: absolute;
+    bottom: 15%;
+     user-select: none;
+    margin-right: 20%;
+    width: 80%;
+    height: 60%;
+    text-align: center;
+
+    color: #283000;
+    font-size: 3.4vmin;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.9vmin;
+    border-radius: 20px;
+}
+
+.The_Time {
+    width: 10%;
+    height: 45%;
+    position: absolute;
+    right: 10%;
+    top: 14%;
+}
+.Time {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    left: 5%;
+    border-radius: 20px;
+    right: 5%;
+    top: 15%;
+    bottom: 15%;
+ 
+    border-radius: 30px;
+    color: #283000;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .base_content {
     width: 70%;
@@ -108,7 +177,7 @@ header {
 }
 .done_slide >p {
     text-align:center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     font-size: 2vmin;
     font-variant-ligatures: no-common-ligatures;
@@ -124,7 +193,7 @@ header {
     text-align:center;
     padding-left: 8%;
     padding-right: 8%;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(102, 102, 102);
     margin-top: 3%;
     margin-bottom: 0;
@@ -137,6 +206,7 @@ header {
     margin-right: 35%;
     position: absolute;
     margin-top: 2%;
+    border-radius: 50PX;
 }
 .disabled1 {
     width: 5vmin;
@@ -193,7 +263,7 @@ header {
     text-align:center;
     padding-left: 8%;
     padding-right: 8%;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(102, 102, 102);
     margin-top: 3%;
     margin-bottom: 0;
@@ -209,7 +279,7 @@ header {
 }
 .message >p {
     text-align:center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     font-size: 2vmin;
     font-variant-ligatures: no-common-ligatures;
@@ -245,7 +315,7 @@ header {
     box-shadow: 4px 5px 24px 0px rgba(129, 154, 95, 0.12) inset;
     border-radius: 27px;
     display: inline-block;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: 'Quicksand', sans-serif;
     color: #929292;
     background: linear-gradient(90deg, rgb(231, 243, 219) 25%, rgb(212, 234, 141));
     text-align: center;
@@ -278,14 +348,14 @@ header {
     text-align:center;
     padding-left: 8%;
     padding-right: 8%;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(102, 102, 102);
     margin-top: 3%;
     margin-bottom: 0;
 }
 .onpopup >p {
     text-align:center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     font-size: 2vmin;
     font-variant-ligatures: no-common-ligatures;
@@ -326,44 +396,7 @@ header {
     border-radius: 50%;
     display: none;
 }
-.clock {
-    position: absolute;
-    bottom: 15%;
-     user-select: none;
-    margin-right: 20%;
-    width: 80%;
-    height: 60%;
-    text-align: center;
-    background-color: #dbea8f;
-    color: #283000;
-    font-size: 3.4vmin;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.9vmin;
-    border-radius: 20px;
-}
 
-.The_Time {
-    width: 0;
-    height: 45%;
-    position: absolute;
-    right: 15%;
-    top: 14%;
-}
-.Time {
-    width: 90%;
-    height: 70%;
-    position: absolute;
-    left: 5%;
-    border-radius: 20px;
-    right: 5%;
-    top: 15%;
-    bottom: 15%;
-    background-color: #dbea8f;
-    border-radius: 30px;
-    color: #283000;
-    font-size: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 @keyframes enable {
     0% {
         width: 50px;
