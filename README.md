@@ -1,2 +1,5 @@
 # MaterialThemeExample
-Google material theme by Shad-Coder
+Google eco material theme by Shad-Coder
+*                 *
+all rights reserved
+*                 *
