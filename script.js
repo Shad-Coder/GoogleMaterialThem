@@ -16,7 +16,7 @@ twohand.classList.remove('disabled1')
 twohand.classList.add('enable1')
 });
 /* time - vremya */
-function showTime(){
+function showTime() {
     var date = new Date();
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
@@ -31,5 +31,27 @@ function showTime(){
     
     setTimeout(showTime, 1000);
 }
+/* scroll helper */ 
+
+    document.addEventListener('wheel', function scroll (e){
+      
+        if (e.deltaY >= 1) {
+         
+            console.log('cookie');
+            window.scrollTo({
+                behavior: 'smooth',
+                top: 2000
+             })
+        }
+        else {
+            console.log('ecx');
+            window.scrollTo({
+               behavior: 'smooth',
+               top: -2000
+            })
+        
+        }
+      
+    })
 
 showTime();
