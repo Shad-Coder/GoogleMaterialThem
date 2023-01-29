@@ -2,7 +2,8 @@ const message = document.querySelector('.popup');
 const hand = document.querySelector('.disabled');
 const firstslide = document.querySelector('.first_slide');
 const twohand = document.querySelector('.disabled1');
-
+const phone = document.querySelector('.phone');
+const header = document.querySelector('header')
 message.addEventListener('click', function () {
     message.classList.remove('message1');
     message.classList.add('onpopup');
@@ -52,6 +53,11 @@ function showTime() {
         
         }
       
-    })
+    });
+    phone.addEventListener('click', function () {
+        header.classList.add('small_header')
+        header.classList.toggle('full_header');
+
+    });
 
 showTime();
