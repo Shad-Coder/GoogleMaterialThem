@@ -3,7 +3,8 @@ const hand = document.querySelector('.disabled');
 const firstslide = document.querySelector('.first_slide');
 const twohand = document.querySelector('.disabled1');
 const phone = document.querySelector('.phone');
-const header = document.querySelector('header')
+const header = document.querySelector('header');
+const nav = document.querySelector('.top__content__off')
 message.addEventListener('click', function () {
     message.classList.remove('message1');
     message.classList.add('onpopup');
@@ -57,7 +58,8 @@ function showTime() {
     phone.addEventListener('click', function () {
         header.classList.add('small_header')
         header.classList.toggle('full_header');
-
+        nav.classList.remove('top__content__off');
+        nav.classList.toggle('top__content__on');
     });
 
 showTime();
