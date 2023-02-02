@@ -39,14 +39,14 @@ function showTime() {
       
         if (e.deltaY >= 1) {
          
-            console.log('cookie');
+          
             window.scrollTo({
                 behavior: 'smooth',
                 top: 2000
              })
         }
         else {
-            console.log('ecx');
+          
             window.scrollTo({
                behavior: 'smooth',
                top: -2000
@@ -58,8 +58,73 @@ function showTime() {
     phone.addEventListener('click', function () {
         header.classList.add('small_header')
         header.classList.toggle('full_header');
-        nav.classList.remove('top__content__off');
-        nav.classList.toggle('top__content__on');
+    
     });
 
 showTime();
+let setting1 = document.getElementById('myRange');
+let countSaturation = document.querySelector('#value');
+let effect = document.querySelector('.effectOn');
+let html = document.getElementById('grand__parent');
+setting1.addEventListener('mousemove', function () {
+    let x = setting1.value;
+    let color = 'linear-gradient(90deg, rgb(219,234,139)' + x + '%, rgb(48,49,44)' + x + '%)';
+    setting1.style.background = color;
+    countSaturation.innerHTML = " " + x;
+    html.style.filter = "brightness(" + setting1.value * 2 + "%)";
+    if (x >= 75) {
+        countSaturation.innerHTML = " " + x + " warning - extreme count";
+        countSaturation.style.color = '#ffa38c';   
+    }
+    if (x == 45) {
+        countSaturation.innerHTML = " " + x + " recomended count ";
+        countSaturation.style.color = '#e7f3db';  
+    } 
+    if (x <=10) {
+    }
+    else {
+        countSaturation.style.color = '';
+    }
+})
+
+setting1.addEventListener('touchmove', function () {
+    let x = setting1.value;
+    let color = 'linear-gradient(90deg, rgb(219,234,139)' + x + '%, rgb(48,49,44)' + x + '%)';
+    setting1.style.background = color;
+    countSaturation.innerHTML = " " + x;
+    html.style.filter = "brightness(" + setting1.value * 2 + "%)";
+    if (x >= 75) {
+        countSaturation.innerHTML = " " + x + " warning - extreme count";
+        countSaturation.style.color = '#ffa38c';   
+    }
+    if (x == 45) {
+        countSaturation.innerHTML = " " + x + " recomended count ";
+        countSaturation.style.color = '#e7f3db';  
+    } 
+    if (x <=10) {
+    }
+    else {
+        countSaturation.style.color = '';
+    }
+})
+
+setting1.addEventListener('keyup', function () {
+    let x = setting1.value;
+    let color = 'linear-gradient(90deg, rgb(219,234,139)' + x + '%, rgb(48,49,44)' + x + '%)';
+    setting1.style.background = color;
+    countSaturation.innerHTML = " " + x;
+    html.style.filter = "brightness(" + setting1.value * 2 + "%)";
+    if (x >= 75) {
+        countSaturation.innerHTML = " " + x + " warning - extreme count";
+        countSaturation.style.color = '#ffa38c';   
+    }
+    if (x == 45) {
+        countSaturation.innerHTML = " " + x + " recomended count ";
+        countSaturation.style.color = '#e7f3db';  
+    } 
+    if (x <=10) {
+    }
+    else {
+        countSaturation.style.color = '';
+    }
+})
